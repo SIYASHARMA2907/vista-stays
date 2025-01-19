@@ -1,0 +1,22 @@
+<!-- //template for flash messages -->
+
+<% if(success && success.length ){ %> <!--//length is taken because success is array and it will be always there even with length 0-->
+<div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+      <%= success %> 
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>  <!--for cross button when flash will come -->
+    </div>  <!--for green alert -->
+<%}%>
+
+<% if(error && error.length ){ %> <!--//length is taken because success is array and it will be always there even with length 0-->
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+          <%= error %> 
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>  <!--for cross button when flash will come -->
+        </div>  <!--for green alert -->
+    <%}%>
+    
+
+
+
+
+
+ 
